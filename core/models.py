@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.urlresolvers import reverse
 
 # Create your models here.
 class Location(models.Model):
@@ -8,3 +9,6 @@ class Location(models.Model):
 
 	def __unicode__(self):
 		return self.title
+
+	def get_absolute_url(self):
+		return reverse(viewname="location_list", args=[self.id])
