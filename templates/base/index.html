@@ -72,7 +72,8 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-
+    
+    {% block main_content %}
     <!-- Header -->
     <header>
         <div class="container">
@@ -112,10 +113,6 @@
             </div>
         </div>
     </section>
-
-   
-
-   
 
     <!-- Team Section -->
     <section id="team" class="bg-light-gray">
@@ -201,7 +198,8 @@
             </div>
         </div>
     </section>
-
+   
+    {% endblock %}
     <footer>
         <div class="container">
             <div class="row">

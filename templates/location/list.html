@@ -6,7 +6,10 @@
 	<div class="col-md-2"></div>
 	<div class="col-md-8">
 	{% for location in object_list %}
-		{{ location.title }}
+		<div class='panel'>
+		<h3>{{ location.title }}</h3>
+		<p>{{ location.description }}</p>
+		</div>
 	{% endfor %}
 	</div>
 	<div class="col-md-2"></div>
