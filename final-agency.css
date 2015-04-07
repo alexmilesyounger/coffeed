@@ -14,7 +14,7 @@ body {
 }
 
 .text-primary {
-    color: #fed136;
+    color: #d4a432;
 }
 
 p {
@@ -35,7 +35,7 @@ a.active {
 }
 
 a {
-    color: #fed136;
+    color: #d4a432;
 }
 
 a:hover,
@@ -51,7 +51,7 @@ h3,
 h4,
 h5,
 h6 {
-    text-transform: uppercase;
+    text-transform: none;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
@@ -69,12 +69,12 @@ h6 {
 }
 
 .btn-primary {
-    border-color: #fed136;
-    text-transform: uppercase;
+    border-color: #d4a432;
+    text-transform: none;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #fff;
-    background-color: #fed136;
+    background-color: #d4a432;
 }
 
 .btn-primary:hover,
@@ -108,25 +108,25 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #fed136;
-    background-color: #fed136;
+    border-color: #d4a432;
+    background-color: #d4a432;
 }
 
 .btn-primary .badge {
-    color: #fed136;
+    color: #d4a432;
     background-color: #fff;
 }
 
 .btn-xl {
     padding: 20px 40px;
-    border-color: #fed136;
+    border-color: #d4a432;
     border-radius: 3px;
-    text-transform: uppercase;
+    text-transform: none;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
-    background-color: #fed136;
+    background-color: #d4a432;
 }
 
 .btn-xl:hover,
@@ -160,12 +160,12 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-    border-color: #fed136;
-    background-color: #fed136;
+    border-color: #d4a432;
+    background-color: #d4a432;
 }
 
 .btn-xl .badge {
-    color: #fed136;
+    color: #d4a432;
     background-color: #fff;
 }
 
@@ -176,7 +176,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-brand {
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    color: #fed136;
+    color: #d4a432;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -191,8 +191,8 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #fed136;
-    background-color: #fed136;
+    border-color: #d4a432;
+    background-color: #d4a432;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -201,11 +201,11 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #fed136;
+    background-color: #d4a432;
 }
 
 .navbar-default .nav li a {
-    text-transform: uppercase;
+    text-transform: none;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
@@ -215,13 +215,13 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: #fed136;
+    color: #d4a432;
 }
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
     color: #fff;
-    background-color: #fed136;
+    background-color: #d4a432;
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
@@ -232,10 +232,9 @@ fieldset[disabled] .btn-xl.active {
 
 @media(min-width:768px) {
     .navbar-default {
-        /*padding: 25px 0;*/
-        padding: 10px 0; /* Change for Project 3 Video 8 */
+        padding: 25px 0;
         border: 0;
-        background-color: #222;
+        background-color: transparent;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -254,7 +253,7 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: #222;
+        background-color: #000;
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
@@ -266,7 +265,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../img/header-bg.jpg);
+    background-image: url(../img/Python_Header_Image.jpg);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -290,7 +289,7 @@ header .intro-text .intro-lead-in {
 
 header .intro-text .intro-heading {
     margin-bottom: 25px;
-    text-transform: uppercase;
+    text-transform: none;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 50px;
     font-weight: 700;
@@ -313,7 +312,7 @@ header .intro-text .intro-heading {
 
     header .intro-text .intro-heading {
         margin-bottom: 50px;
-        text-transform: uppercase;
+        text-transform: none;
         font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 75px;
         font-weight: 700;
@@ -322,9 +321,8 @@ header .intro-text .intro-heading {
 }
 
 section {
-    padding: 100px 0; 
+    padding: 100px 0;
 }
-
 
 section h2.section-heading {
     margin-top: 0;
@@ -495,7 +493,7 @@ section h3.section-subheading {
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: #fed136;
+    background-color: #d4a432;
 }
 
 .timeline>li .timeline-image h4 {
@@ -655,7 +653,7 @@ aside.clients img {
 
 section#contact {
     background-color: #222;
-    background-image: url(../img/map-image.png);
+    background-image: url(../img/Python_Subscribe_Image.jpg);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -682,33 +680,33 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-    border-color: #fed136;
+    border-color: #d4a432;
     box-shadow: none;
 }
 
 section#contact::-webkit-input-placeholder {
-    text-transform: uppercase;
+    text-transform: none;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #bbb;
 }
 
 section#contact:-moz-placeholder {
-    text-transform: uppercase;
+    text-transform: none;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #bbb;
 }
 
 section#contact::-moz-placeholder {
-    text-transform: uppercase;
+    text-transform: none;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #bbb;
 }
 
 section#contact:-ms-input-placeholder {
-    text-transform: uppercase;
+    text-transform: none;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #bbb;
@@ -724,7 +722,7 @@ footer {
 }
 
 footer span.copyright {
-    text-transform: uppercase;
+    text-transform: none;
     text-transform: none;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 40px;
@@ -732,7 +730,7 @@ footer span.copyright {
 
 footer ul.quicklinks {
     margin-bottom: 0;
-    text-transform: uppercase;
+    text-transform: none;
     text-transform: none;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 40px;
@@ -760,7 +758,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-    background-color: #fed136;
+    background-color: #d4a432;
 }
 
 .btn:focus,
@@ -848,12 +846,12 @@ ul.social-buttons li a:active {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #fed136;
+    background: #d4a432;
 }
 
 ::selection {
     text-shadow: none;
-    background: #fed136;
+    background: #d4a432;
 }
 
 img::selection {
@@ -865,14 +863,11 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: #fed136;
+    webkit-tap-highlight-color: #d4a432;
 }
 
- /*
- * CUSTOM CSS for GET COFFEED
- */
 
- .display-box{
+.display-box{
     height:240px;
 }
 
@@ -887,7 +882,6 @@ body {
 .after-header-buffer{
     height:45px;
 }
-
 .coffeed-svg-icon{
     height:112px;
     width:112px;
@@ -895,6 +889,10 @@ body {
 
 .coffeed-rating{
     color:#d4a432;
+}
+
+.coffeed-rating i{
+    padding-left:10px;
 }
 
 .panel {
@@ -912,6 +910,7 @@ box-shadow: 0 1px 1px rgba(0,0,0,.05);
 
 .subheading{
     color:#ccc;
+
 }
 
 .inspiration h1{
@@ -936,6 +935,7 @@ border-bottom-left-radius: 0px;
 border-top-right-radius: 0px;
 border-bottom-right-radius: 0px;
 }
+
 
 .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
 z-index: 2;
@@ -971,6 +971,7 @@ background-color: #fff;
 border-color: #ddd;
 }
 
+
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -999,11 +1000,12 @@ section#contact {
     background-repeat: no-repeat;
 }
 
+
 .btn-xl {
     padding: 20px 40px;
     border-color: #d4a432;
     border-radius: 0px;
-    text-transform: uppercase;
+    text-transform: none;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
     font-weight: 700;
@@ -1015,9 +1017,10 @@ section#contact {
     border-radius: 0px;
 }
 
-.main-content {
+.main-content{
     padding-top: 90px;
 }
+
 
 .data-layer{
     display: none;
@@ -1030,4 +1033,8 @@ h3 a {
 
 .btn{
     border-radius: 0px;
+}
+
+.wide-map{
+    height:400px;
 }
