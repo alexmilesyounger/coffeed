@@ -26,7 +26,13 @@ class LocationDetailView(DetailView):
 	template_name = 'location/detail.html'
 	context_object_name = 'location'
 
-class ReviewCreateView(CreateView):
-    model = coremodels.Review
-    template_name = 'base/form.html'
-    fields = "__all__"
+# WORKING REVIEW FORM
+# class ReviewCreateView(CreateView):
+#     model = coremodels.Review
+#     template_name = 'base/form.html'
+#     fields = "__all__"
+
+class LocationCreateView(CreateView):
+	model = coremodels.Location
+	template_name = 'base/form.html'
+	fields = "__all__"
