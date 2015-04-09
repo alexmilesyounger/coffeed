@@ -45,6 +45,9 @@ class Location(models.Model):
 		else: 
 			return int(average)
 
+	def get_reviews(self):
+		return self.review_set.all()
+
 class Review(models.Model):
 	location = models.ForeignKey(Location)
 	user = models.ForeignKey(User)
