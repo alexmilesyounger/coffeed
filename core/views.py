@@ -26,12 +26,6 @@ class LocationDetailView(DetailView):
 	template_name = 'location/detail.html'
 	context_object_name = 'location'
 
-# VIDEO CODE
-# class LocationCreateView(CreateView):
-# 	model = coremodels.Location
-# 	template_name = 'base/form.html'
-	
-# NOTE CODE
 class ReviewCreateView(CreateView):
     model = coremodels.Review
     template_name = 'base/form.html'
