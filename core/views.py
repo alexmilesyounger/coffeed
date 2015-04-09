@@ -15,6 +15,12 @@ class LocationListView(ListView):
 	model = coremodels.Location
 	template_name = 'location/list.html'
 
+class SearchListView(LocationListView):
+	
+	def get_queryset(self):
+		incoming_query_string = self.request.GET.get('query', '')
+		return coremodels.Location.objects.filter(title__icontains=incoming_query_string)
+
 # class SearchListView(LocationListView):
 
 # 	def get_queryset(self):
