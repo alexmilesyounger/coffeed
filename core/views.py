@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from django.views.generic.base import TemplateView
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView
 import core.models as coremodels
 
 # Create your views here. 
@@ -39,6 +39,11 @@ class LocationDetailView(DetailView):
 #     fields = "__all__"
 
 class LocationCreateView(CreateView):
+	model = coremodels.Location
+	template_name = 'base/form.html'
+	fields = "__all__"
+
+class LocationUpdateView(UpdateView):
 	model = coremodels.Location
 	template_name = 'base/form.html'
 	fields = "__all__"
