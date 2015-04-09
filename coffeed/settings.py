@@ -43,6 +43,10 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
+    # This is the code to add from https://pypi.python.org/pypi/django-widget-tweaks
+    'widget_tweaks',
+    # This is the lesson notes code to add
+    # 'django-widget-tweaks',
 )
 
 MIDDLEWARE_CLASSES = (
