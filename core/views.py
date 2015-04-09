@@ -21,22 +21,23 @@ class SearchListView(LocationListView):
 		incoming_query_string = self.request.GET.get('query', '')
 		return coremodels.Location.objects.filter(title__icontains=incoming_query_string)
 
-# class SearchListView(LocationListView):
-
-# 	def get_queryset(self):
-# 		incoming_query_string = self.request.GET.get('query','')
-# 		return coremodels.Location.objects.filter(title__icontains=incoming_query_string)
-
 class LocationDetailView(DetailView):
 	model = coremodels.Location
 	template_name = 'location/detail.html'
 	context_object_name = 'location'
 
-# WORKING REVIEW FORM
-# class ReviewCreateView(CreateView):
-#     model = coremodels.Review
-#     template_name = 'base/form.html'
-#     fields = "__all__"
+	def get_context_data(self, **kwargs):
+		context = super(LocationDetailView, self).get_context_data(**kwargs)
+		location = coremodels.Location.objects.get(id=self.kwargs['pk'])
+		if self.request.user.is_authenticated():
+			user_reviews = coremodels.Review.objects.filter(location=location, user=self.request.user)
+			if user_reviews.count() > 0:
+				context['user_review'] = user_reviews[0]
+			else: 
+				context['user_review'] = None
+
+		return context
+
 
 class LocationCreateView(CreateView):
 	model = coremodels.Location
