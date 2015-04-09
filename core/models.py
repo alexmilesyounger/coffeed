@@ -38,8 +38,6 @@ class Location(models.Model):
 		return reverse(viewname="location_list", args=[self.id])
 
 class Review(models.Model):
-	# Eric has no = in the code, but why not? Is it a typo?
-	# location models.ForeignKey(Location)
 	location = models.ForeignKey(Location)
 	user = models.ForeignKey(User)
 	description = models.TextField(null=True, blank=True)
