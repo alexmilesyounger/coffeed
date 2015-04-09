@@ -18,6 +18,11 @@
 				<img src="{{ location.image_file.url }}"></img>
 			{% endif %}
 			</div> 
+			<div class="col-md-12">
+			{% for review in location.get_reviews %}	
+				{% include 'base/review.html' with location=location %}
+			{% endfor %}
+			</div>
 		</div>
 	</div>
 	<div class="col-md-2"></div>
