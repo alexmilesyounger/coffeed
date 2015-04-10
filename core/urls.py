@@ -16,4 +16,5 @@ urlpatterns = patterns('',
     # REVIEW FORM
     url(r'location/(?P<pk>\d+)/review/create/$', coreviews.ReviewCreateView.as_view(), name='review_create'),
     url(r'location/(?P<pk>\d+)/review/update/$', coreviews.ReviewUpdateView.as_view(), name='review_update'),
+    url(r'entrance/$', coreviews.entrance),
 )
