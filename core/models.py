@@ -2,6 +2,7 @@ from django.db import models
 from django.core.urlresolvers import reverse
 from django.contrib.auth.models import User
 from django.db.models import Avg
+from geoposition.fields import GeopositionField
 
 import os
 import uuid
@@ -41,7 +42,6 @@ COFFEE_CHOICES = (
 	(4, 'Gourmet'),
 	)
 
-
 def upload_to_location(instance, filename):
     blocks = filename.split('.')
     ext = blocks[-1]
@@ -55,6 +55,7 @@ class Location(models.Model):
 	title = models.CharField(max_length=300)
 	description = models.TextField(null=True, blank=True)
 	address = models.TextField(null=True, blank=True)
+	position = GeopositionField(null=True, blank=True)
 	hours = models.TextField(null=True, blank=True)
 	image_file = models.ImageField(upload_to=upload_to_location, null=True, blank=True)
 	wifi = models.IntegerField(choices=WIFI_CHOICES, null=True, blank=True)
